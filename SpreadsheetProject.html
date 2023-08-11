@@ -39,6 +39,7 @@
 								</a>
 								
 								
+								
 							<!-- Nav -->
 								<nav>
 									<ul>
@@ -66,9 +67,70 @@
 					<div id="main">
 						<div class="inner">
 							<header>
-								<h1>Spreadsheet Project coming soon! </h1>
+
+								<p> This data was Provided by Nasdaq free Data published by <a href="https://data.nasdaq.com/data/RATEINF-inflation-rates" target="_blank">Quandl. </a> Visit <a href="https://www.rateinflation.com/about/" target="_blank">RI for information about inflation calculation.</a> </p>
 								
+								<span class="image main">
+									
+									<img src="images/download_location.jpg" height:auto; width:auto;/>
 								
+								</span>
+
+								<p>After downloading the zipped CSV the spreadsheet should look like this. The data in the description column needs to be gathered.</p>
+
+								<span class="image main">
+									
+									<img src="images/CPI.jpg" />
+								
+								</span>
+
+								<p>Then gather the information for the United States Consumer Price Index from <a href="https://fred.stlouisfed.org/series/CPIAUCSL" target="_blank">Federal Reserve Economic Data.</a> </p>
+								
+								<span class="image main">
+									
+									<img src="images/FRED_cpi_info.jpg" />
+								
+								</span>
+
+								<p>Now right click the value 304 select inspect from the drop down menu. The Inspector will open with the HTML code selected. Then select Copy select the arrow drop down menu > Copy full XPath</p>
+
+								<span class="image main">
+									
+									<img src="images/copy_xpath.jpg" />
+								
+								</span>
+
+								<p>Then go back to the spreadsheet get the link to the website and add it to the =IMPORTXML function. The link to the website will be added to the left and the XPath will be added to the right.</p>
+
+								
+								<span class="image main">
+									
+									<img src="images/function_.jpg" />
+								
+								</span>
+
+								<p>Then do this for the inflation rate for United States by getting the data for 10 years at <a href="https://fred.stlouisfed.org/series/T10YIE" target="_blank">Federal Reserve Economic Data.</a></p>
+								
+								<span class="image main">
+									
+									<img src="images/FRED_infl_rate.jpg" />
+								
+								</span>
+
+								<p>Add the link to the spreadsheet using =IMPORTXML function.</p>
+
+								<span class="image main">
+									
+									<img src="images/infl_rate_sheet.jpg" />
+								
+								</span>
+
+								<p>The Federal Reserve Economic Data has data for the other countries. Another way to gather the data and add it to the spreadsheet is to go to the link listed in description column. For the completed spreadsheet go to GitHub.</p>
+
+
+
+
+
 							</header>
 						
 
